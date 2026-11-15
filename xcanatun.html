@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Reforma · Xcanatún</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1b1a17;--surface:#26241f;--ink:#f4efe6;--muted:#b9b1a2;--accent:#9fd16b;--chile:#e0452b;--line:#3a372f;--font-display:"Anton","Impact",sans-serif;--font-body:"Work Sans",system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.6;font-size:17px}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{position:relative;display:flex;align-items:flex-end;padding:72px 0 56px;border-bottom:1px solid var(--line);min-height:560px;background-size:cover;background-position:center 30%;background-repeat:no-repeat}
+header.hero.home{background-image:linear-gradient(180deg,rgba(27,26,23,.25) 0%,rgba(27,26,23,.55) 55%,rgba(27,26,23,.95) 100%),linear-gradient(90deg,rgba(27,26,23,.85) 0%,rgba(27,26,23,.2) 70%),url("abuelo.jpg")}
+header.hero.sub{min-height:auto;padding:48px 0 40px;background:var(--surface)}
+.logo{display:block;width:min(340px,90%);height:auto;margin:0 0 20px}
+h1{font-family:var(--font-display);font-weight:400;font-size:clamp(48px,8vw,96px);line-height:.95;margin:0 0 12px;letter-spacing:.01em}
+.tagline{color:#e6dfd2;font-size:19px;margin:0 0 24px;max-width:46ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid var(--accent);color:var(--bg);background:var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(244,239,230,.6)}
+.btn.chile{background:var(--chile);border-color:var(--chile);color:#fff}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--font-display);font-weight:400;font-size:40px;letter-spacing:.02em;margin:0 0 16px}
+h3.sub{font-family:var(--font-display);font-weight:400;font-size:26px;color:var(--accent);margin:28px 0 12px;letter-spacing:.02em}
+p{max-width:65ch;margin:0 0 14px}
+.branches{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:720px){.branches{grid-template-columns:1fr 1fr}}
+.branch-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;transition:border-color .2s}
+.branch-card:hover{border-color:var(--accent)}
+.branch-card .name{font-family:var(--font-display);font-size:34px;letter-spacing:.02em;color:var(--accent);margin:0 0 8px}
+.branch-card .addr{color:var(--muted);font-size:15px;margin:0 0 16px}
+.branch-card .go{font-weight:600;color:var(--ink)}
+.hours{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);max-width:520px}
+.hours div{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--line)}
+.hours div:last-child{border-bottom:0}
+.hours span:last-child{font-variant-numeric:tabular-nums;color:var(--muted)}
+.hours .today{background:rgba(159,209,107,.12)}
+.grid2{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.card .num{font-size:20px;font-variant-numeric:tabular-nums;margin-bottom:12px;display:block}
+.footer{padding:32px 0 56px;color:var(--muted);font-size:14px}
+.crumb{color:var(--muted);font-size:14px;margin:0 0 14px}
+.crumb a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero sub">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">← Todas las sucursales</a></p>
+    <img class="logo" src="logo.png" alt="La Reforma, desde 1963, auténtica cantina" width="900" height="359" style="width:min(260px,80%)">
+    <h1>Xcanatún</h1>
+    <p class="tagline">Carretera Mérida–Progreso, Tablaje Catastral 14754 · Xcanatún, 97345 Mérida, Yucatán</p>
+    <div class="actions">
+      <a class="btn chile" href="https://wa.me/52442580465?text=Hola%2C%20quiero%20reservar%20mesa%20en%20La%20Reforma%20Xcanatún">Reservar mesa</a>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Carretera+Merida+Progreso+Xcanatun+Merida+Yucatan">Cómo llegar</a>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <h2>Horario</h2>
+    <div class="hours"><div data-day="1"><span>Lunes</span><span>Cerrado</span></div><div data-day="2"><span>Martes</span><span>1:00 – 10:00 p.m.</span></div><div data-day="3"><span>Miércoles</span><span>1:00 – 10:00 p.m.</span></div><div data-day="4"><span>Jueves</span><span>1:00 – 10:00 p.m.</span></div><div data-day="5"><span>Viernes</span><span>1:00 – 10:00 p.m.</span></div><div data-day="6"><span>Sábado</span><span>1:00 – 8:00 p.m.</span></div><div data-day="0"><span>Domingo</span><span>1:00 – 6:00 p.m.</span></div></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Menú</h2>
+    <p>Mismos platillos que en la otra sucursal, con los precios de esta sucursal.</p>
+    <div class="actions">
+      <a class="btn" href="menu_xcanatun_alimentos.pdf">Descargar menú de alimentos (PDF)</a>
+      <a class="btn ghost" href="menu_xcanatun_bebidas.pdf">Descargar menú de bebidas (PDF)</a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Teléfono</h3>
+        <span class="num"><a href="tel:9998419152" style="color:inherit;text-decoration:none">999 841 9152</a></span>
+      </div>
+      <div class="card">
+        <h3>WhatsApp</h3>
+        <span class="num"><a href="https://wa.me/52442580465" style="color:inherit;text-decoration:none">442 258 0465</a></span>
+        <a href="https://wa.me/52442580465">Escribir por WhatsApp</a>
+      </div>
+    </div>
+    <p style="margin-top:20px"><a href="https://www.google.com/maps/search/?api=1&query=Carretera+Merida+Progreso+Xcanatun+Merida+Yucatan">Abrir ubicación en Google Maps</a></p>
+  </div>
+</section>
+
+<footer class="footer"><div class="wrap">La Reforma · Comida chilanga · Desde 1963</div></footer>
+<script>
+(function(){
+  var d=new Date().getDay(); // 0 domingo ... 6 sábado
+  document.querySelectorAll('[data-day]').forEach(function(el){
+    if(Number(el.getAttribute('data-day'))===d) el.classList.add('today');
+  });
+})();
+</script>
+</body>
+</html>
